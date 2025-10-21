@@ -12,5 +12,5 @@ backend "s3" {
 }
 
 provider "aws" {
-  region = "us-east-01"
+  region = "us-east-1"
 }

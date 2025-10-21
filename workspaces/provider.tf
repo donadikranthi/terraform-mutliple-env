@@ -6,8 +6,12 @@ terraform {
     }
   }
 
-  backend "s3" {
-    
+backend "s3" {
+    bucket = "kranthi-remote-state"
+    key    = "workspace-demo"
+    region = "us-east-1"
+    use_lockfile = true
+    encrypt = true
   }
 }
 
